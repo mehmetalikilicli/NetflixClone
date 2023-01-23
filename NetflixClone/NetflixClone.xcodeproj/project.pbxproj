@@ -26,6 +26,7 @@
 		17E9D8D82949FBA500050594 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E9D8D72949FBA500050594 /* SearchViewController.swift */; };
 		17E9D8DA2949FBC200050594 /* DownloadsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E9D8D92949FBC200050594 /* DownloadsViewController.swift */; };
 		17F073BB296C3B7E00D17500 /* HeroHeaderUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F073BA296C3B7E00D17500 /* HeroHeaderUIView.swift */; };
+		17FB6DBB297AEF6E00FB5382 /* SearchResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FB6DBA297AEF6E00FB5382 /* SearchResultsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		17E9D8D72949FBA500050594 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		17E9D8D92949FBC200050594 /* DownloadsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadsViewController.swift; sourceTree = "<group>"; };
 		17F073BA296C3B7E00D17500 /* HeroHeaderUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroHeaderUIView.swift; sourceTree = "<group>"; };
+		17FB6DBA297AEF6E00FB5382 /* SearchResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,7 +135,6 @@
 				17E9D8D22949FB5000050594 /* Controllers */,
 				17530F5529476E4F00BB3A64 /* AppDelegate.swift */,
 				17530F5729476E4F00BB3A64 /* SceneDelegate.swift */,
-				17530F5929476E4F00BB3A64 /* MainTabBarViewController.swift */,
 				17530F5E29476E5100BB3A64 /* Assets.xcassets */,
 				17530F6029476E5100BB3A64 /* LaunchScreen.storyboard */,
 				17530F6329476E5100BB3A64 /* Info.plist */,
@@ -144,12 +145,30 @@
 		17E9D8D22949FB5000050594 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				17FB6DBD297AEFCD00FB5382 /* General */,
+				17FB6DBC297AEFC700FB5382 /* Core */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		17FB6DBC297AEFC700FB5382 /* Core */ = {
+			isa = PBXGroup;
+			children = (
 				17E9D8D32949FB6600050594 /* HomeViewController.swift */,
 				17E9D8D52949FB9000050594 /* UpComingViewController.swift */,
 				17E9D8D72949FBA500050594 /* SearchViewController.swift */,
+				17530F5929476E4F00BB3A64 /* MainTabBarViewController.swift */,
 				17E9D8D92949FBC200050594 /* DownloadsViewController.swift */,
 			);
-			path = Controllers;
+			path = Core;
+			sourceTree = "<group>";
+		};
+		17FB6DBD297AEFCD00FB5382 /* General */ = {
+			isa = PBXGroup;
+			children = (
+				17FB6DBA297AEF6E00FB5382 /* SearchResultsViewController.swift */,
+			);
+			path = General;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,6 +257,7 @@
 				17F073BB296C3B7E00D17500 /* HeroHeaderUIView.swift in Sources */,
 				17E9D8DA2949FBC200050594 /* DownloadsViewController.swift in Sources */,
 				17530F5629476E4F00BB3A64 /* AppDelegate.swift in Sources */,
+				17FB6DBB297AEF6E00FB5382 /* SearchResultsViewController.swift in Sources */,
 				1794F767296EEAC9005113F7 /* Extensions.swift in Sources */,
 				17E9D8D62949FB9000050594 /* UpComingViewController.swift in Sources */,
 				17530F5829476E4F00BB3A64 /* SceneDelegate.swift in Sources */,

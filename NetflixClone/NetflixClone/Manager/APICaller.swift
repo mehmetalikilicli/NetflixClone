@@ -10,6 +10,9 @@ import Foundation
 struct Constants {
     static let API_KEY = "7a76cbbe95f8192bac9978a453918b71"
     static let baseURL = "https://api.themoviedb.org"
+    static let youtubeAPI_KEY = "AIzaSyAFa6tpmCf61dmI_2dG0w9mKNPl9yO6N3E"
+    static let youtubeBaseUrl = "https://youtube.googleapis.com/youtube/v3/search?"
+    
 }
 
 enum APIError: Error {
@@ -124,6 +127,55 @@ class APICaller {
         }
         task.resume()
                 
+    }
+    
+    func search(with query : String, completion: @escaping (Result<[Title], Error>) -> Void){
+        
+        guard let query = query.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed) else {return}
+        
+        guard let url = URL(string: "\(Constants.baseURL)/3/search/movie?api_key=\(Constants.API_KEY)&query=\(query)") else {
+            return
+        }
+        
+        let task = URLSession.shared.dataTask(with: url) { data, _, error in
+            guard let data = data, error == nil else {
+                return
+            }
+            do {
+                let results = try JSONDecoder().decode(TrendingTitleResponse.self, from: data)
+                completion(.success(results.results))
+            } catch {
+                completion(.failure(APIError.failedToGetData))
+            }
+        
+        }
+        task.resume()
+                
+    }
+    
+    
+    func getMovie(with query: String){
+        guard let query = query.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed) else {return}
+ 
+        guard let url = URL(string: "\(Constants.youtubeBaseUrl)q=\(query)&key=\(Constants.youtubeAPI_KEY)") else {
+            return
+        }
+
+        let task = URLSession.shared.dataTask(with: url) { data, _, error in
+            guard let data = data, error == nil else {
+                return
+            }
+            do {
+                let results = try JSONSerialization.jsonObject(with: data, options: .fragmentsAllowed)
+                print(results)
+                
+            } catch {
+                print(error.localizedDescription)
+            }
+        
+        }
+        task.resume()
+        
     }
     
 }
