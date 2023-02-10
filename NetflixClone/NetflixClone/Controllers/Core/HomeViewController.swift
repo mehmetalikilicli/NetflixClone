@@ -145,10 +145,6 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         default:
             return UITableViewCell()
         }
-        
-        
-        
-        
         return cell
     }
     

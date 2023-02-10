@@ -25,6 +25,7 @@
 		1794F765296EE04F005113F7 /* Title.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1794F764296EE04F005113F7 /* Title.swift */; };
 		1794F767296EEAC9005113F7 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1794F766296EEAC9005113F7 /* Extensions.swift */; };
 		17A98555297EBC2600C08ECE /* TitlePreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A98554297EBC2600C08ECE /* TitlePreviewViewController.swift */; };
+		17DC9500298D29BB007A5AE8 /* silinecek.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17DC94FF298D29BB007A5AE8 /* silinecek.storyboard */; };
 		17E9D8D42949FB6600050594 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E9D8D32949FB6600050594 /* HomeViewController.swift */; };
 		17E9D8D62949FB9000050594 /* UpComingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E9D8D52949FB9000050594 /* UpComingViewController.swift */; };
 		17E9D8D82949FBA500050594 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E9D8D72949FBA500050594 /* SearchViewController.swift */; };
@@ -53,6 +54,7 @@
 		1794F764296EE04F005113F7 /* Title.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Title.swift; sourceTree = "<group>"; };
 		1794F766296EEAC9005113F7 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		17A98554297EBC2600C08ECE /* TitlePreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitlePreviewViewController.swift; sourceTree = "<group>"; };
+		17DC94FF298D29BB007A5AE8 /* silinecek.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = silinecek.storyboard; sourceTree = "<group>"; };
 		17E9D8D32949FB6600050594 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		17E9D8D52949FB9000050594 /* UpComingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpComingViewController.swift; sourceTree = "<group>"; };
 		17E9D8D72949FBA500050594 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
@@ -152,6 +154,7 @@
 				17530F6029476E5100BB3A64 /* LaunchScreen.storyboard */,
 				17530F6329476E5100BB3A64 /* Info.plist */,
 				17942E392987B5B300C9241D /* NetflixCloneModel.xcdatamodeld */,
+				17DC94FF298D29BB007A5AE8 /* silinecek.storyboard */,
 			);
 			path = NetflixClone;
 			sourceTree = "<group>";
@@ -168,10 +171,10 @@
 		17FB6DBC297AEFC700FB5382 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				17530F5929476E4F00BB3A64 /* MainTabBarViewController.swift */,
 				17E9D8D32949FB6600050594 /* HomeViewController.swift */,
 				17E9D8D52949FB9000050594 /* UpComingViewController.swift */,
 				17E9D8D72949FBA500050594 /* SearchViewController.swift */,
-				17530F5929476E4F00BB3A64 /* MainTabBarViewController.swift */,
 				17E9D8D92949FBC200050594 /* DownloadsViewController.swift */,
 			);
 			path = Core;
@@ -251,6 +254,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17DC9500298D29BB007A5AE8 /* silinecek.storyboard in Resources */,
 				17530F6229476E5100BB3A64 /* LaunchScreen.storyboard in Resources */,
 				17530F5F29476E5100BB3A64 /* Assets.xcassets in Resources */,
 			);
