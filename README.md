@@ -1,3 +1,7 @@
 # NetflixClone
 
-<img width="368" alt="image" src="https://user-images.githubusercontent.com/58392243/212087221-a119c2ce-8741-4162-b62c-96a1e99d9c8e.png">
+MVVM - The Movie Database (TMDB) - CoreData
+
+Yükleniyor...
+
+![NetflixCloneGif2](https://user-images.githubusercontent.com/58392243/215760938-c78b3b27-9a9b-467a-8cec-97d4ed0c66c8.gif)
